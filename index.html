@@ -1,18 +1,58 @@
----
-layout: default
-title: 天空樹
----
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS\bootstrap.css"/>
 
-<h2>{{ page.title }}</h2>
+<link rel="stylesheet" type="text/css" href="CSS\styles.css"/>
 
-<p>最近</p>
+<link rel="icon" href="Image/favicon.ico">
 
-<ul>
+<script type="text/javascript" src="Javascript\jquery-1.12.0.js"></script>
 
-　　{% for post in site.posts %}
+<title>
+    Eric's homepage
+</title>
+</head>
 
-　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Eric Gang</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="AMV.html">AMV</a></li>
+                </ul>
 
-　　{% endfor %}
+            </div><!--/.nav-collapse -->
+        </nav>
+    </div>
 
-</ul>
+        <div class="container">
+
+          <!-- Main component for a primary marketing message or call to action -->
+          <div class="jumbotron">
+              <h1 id = "hometitle">Eric's homepage</h1>
+              <br />
+              <br />
+              <p class = "hometext">This page is my homework for a <a href="https://www.coursera.org/learn/website-coding/home/welcome">Coursera class.</a> Mostly with help of Bootstrap.</p>
+              <p class = "hometext">Javascript is used in <em>AMV(Anime Music Video)</em> page.</p>
+          </div>
+
+        </div> <!-- /container -->
+        <script src="Javascript/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
