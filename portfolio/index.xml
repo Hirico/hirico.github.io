@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolios on Omnidox</title>
-    <link>https://hirico.moe/portfolio/</link>
+    <link>http://hirico.moe/portfolio/</link>
     <description>Recent content in Portfolios on Omnidox</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hirico.moe/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hirico.moe/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Unmatched Speed</title>
-      <link>https://hirico.moe/portfolio/unmatchedspeed/</link>
+      <link>http://hirico.moe/portfolio/unmatchedspeed/</link>
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hirico.moe/portfolio/unmatchedspeed/</guid>
+      <guid>http://hirico.moe/portfolio/unmatchedspeed/</guid>
       <description>&lt;p&gt;When I write code, it happens now and then that I forget some syntactic knowledge, and typically I will ask google (type the question in the chrome address bar) instead of looking up in documentation.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,20 +24,20 @@
     
     <item>
       <title>Drawing analogy</title>
-      <link>https://hirico.moe/portfolio/drawinganalogy/</link>
+      <link>http://hirico.moe/portfolio/drawinganalogy/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hirico.moe/portfolio/drawinganalogy/</guid>
+      <guid>http://hirico.moe/portfolio/drawinganalogy/</guid>
       <description>&lt;p&gt;Drawing analogy is a powerful way to come up with new ideas and questions, because it exposes subtleties.
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Disgusting Digital Entertainment</title>
-      <link>https://hirico.moe/portfolio/disgustingdigitalentertainment/</link>
+      <link>http://hirico.moe/portfolio/disgustingdigitalentertainment/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hirico.moe/portfolio/disgustingdigitalentertainment/</guid>
+      <guid>http://hirico.moe/portfolio/disgustingdigitalentertainment/</guid>
       <description>&lt;p&gt;This is a writing practice, which I hope my roommates can someday find and read.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
