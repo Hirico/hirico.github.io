@@ -1,1 +1,1 @@
-# Q: Why we value personality?
+# Q: Why do we value personality?
