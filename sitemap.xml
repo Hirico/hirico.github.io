@@ -3,53 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://hirico.moe/portfolio/unmatchedspeed/</loc>
-    <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+    <loc>https://hirico.moe/posts/understanding/</loc>
+    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hirico.moe/portfolio/drawinganalogy/</loc>
-    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+    <loc>https://hirico.moe/posts/unmatchedspeed/</loc>
+    <lastmod>2018-02-09T22:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hirico.moe/portfolio/disgustingdigitalentertainment/</loc>
-    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hirico.moe/portfolio/thinkaloud/</loc>
-    <lastmod>2018-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hirico.moe/about/</loc>
-    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hirico.moe/legacy/</loc>
-  </url>
-  
-  <url>
-    <loc>http://hirico.moe/categories/</loc>
+    <loc>https://hirico.moe/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://hirico.moe/</loc>
-    <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+    <loc>https://hirico.moe/</loc>
+    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://hirico.moe/portfolio/</loc>
-    <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+    <loc>https://hirico.moe/posts/</loc>
+    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://hirico.moe/tags/</loc>
+    <loc>https://hirico.moe/tags/</loc>
     <priority>0</priority>
   </url>
   
