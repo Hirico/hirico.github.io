@@ -48,6 +48,12 @@
   </url>
   
   <url>
+    <loc>https://hirico.moe/</loc>
+    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hirico.moe/tags/github/</loc>
     <lastmod>2018-09-06T12:00:00+08:00</lastmod>
     <priority>0</priority>
@@ -57,16 +63,6 @@
     <loc>https://hirico.moe/tags/misc/</loc>
     <lastmod>2018-10-06T22:00:00+08:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hirico.moe/</loc>
-    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hirico.moe/search/</loc>
   </url>
   
   <url>
