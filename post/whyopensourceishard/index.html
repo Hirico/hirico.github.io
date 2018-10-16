@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         
             
-                <title>Categories</title>
+                <title>Why open source contribution is hard</title>
             
         
 
@@ -34,18 +35,30 @@
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Why open source contribution is hard"/>
+<meta name="twitter:description" content="This article is based on my reflection on one of my pull requests.
+My pull request is to resolve an usability issue of Visual Studio Code. Basically, if you opened a file in vscode and clicked &lsquo;view its changes from version control system&rsquo;, a sidewindow showing its last version would appear so you could compare the two versions. The problem was that your previous view position of the file was not preserved, and the vscode would scroll your screen to the cursor position of the file, which surprised the user."/>
 
-        <meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://hirico.moe/categories/" />
+        <meta property="og:title" content="Why open source contribution is hard" />
+<meta property="og:description" content="This article is based on my reflection on one of my pull requests.
+My pull request is to resolve an usability issue of Visual Studio Code. Basically, if you opened a file in vscode and clicked &lsquo;view its changes from version control system&rsquo;, a sidewindow showing its last version would appear so you could compare the two versions. The problem was that your previous view position of the file was not preserved, and the vscode would scroll your screen to the cursor position of the file, which surprised the user." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hirico.moe/post/whyopensourceishard/" /><meta property="article:published_time" content="2018-09-06T12:00:00&#43;08:00"/>
+<meta property="article:modified_time" content="2018-09-06T12:00:00&#43;08:00"/>
 
         
-<meta itemprop="name" content="Categories">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="Why open source contribution is hard">
+<meta itemprop="description" content="This article is based on my reflection on one of my pull requests.
+My pull request is to resolve an usability issue of Visual Studio Code. Basically, if you opened a file in vscode and clicked &lsquo;view its changes from version control system&rsquo;, a sidewindow showing its last version would appear so you could compare the two versions. The problem was that your previous view position of the file was not preserved, and the vscode would scroll your screen to the cursor position of the file, which surprised the user.">
 
+
+<meta itemprop="datePublished" content="2018-09-06T12:00:00&#43;08:00" />
+<meta itemprop="dateModified" content="2018-09-06T12:00:00&#43;08:00" />
+<meta itemprop="wordCount" content="793">
+
+
+
+<meta itemprop="keywords" content="Software Engineering,Github," />
 
         
 
@@ -751,8 +764,91 @@ footer a:hover
            
     
         </header>
+<main id="content">
+
+<article id="" class="post">
+    <div class="post-stamp">
+        <span class="taglist">
+        
+        &middot;
+        
+            <a href="https://hirico.moe/tags/software-engineering/">Software Engineering</a>
+        
+            <a href="https://hirico.moe/tags/github/">Github</a>
+        
+        
+        </span>
+          
+    </div>
+    
+    <h1 class="post-title">Why open source contribution is hard</h1>
+    <p>This article is based on my reflection on <a href="https://github.com/Microsoft/vscode/pull/54867">one</a> of my pull requests.</p>
+
+<p>My pull request is to resolve an <a href="https://github.com/Microsoft/vscode/issues/53465">usability issue</a> of Visual Studio Code. Basically, if you opened a file in vscode and clicked &lsquo;view its changes from version control system&rsquo;, a sidewindow showing its last version would appear so you could compare the two versions. The problem was that your previous view position of the file was not preserved, and the vscode would scroll your screen to the cursor position of the file, which surprised the user. I found this issue interesting because it had been opened for 20 days, definitely longer than average fix time, and I wanted to see what made it difficult.</p>
+
+<p>Determining which code triggered the bug was easy. This bug was easy to reproduce, and I managed to locate the code which opens sidewindow within 3 minutes, by using the wording in GUI to search the code base. My next 3 hours were all spent on coming up with a good solution. As an outsider, I know I should be careful to not break project owners&rsquo; mental model of how things should work. Oftentimes worked solutions get rejected for the sake of consistency. Guidelines of contribution often explicitly states <a href="https://github.com/Microsoft/vscode/wiki/Code-Organization">tons of constraints</a>, and still fails to catch every subtle constraint of the project.</p>
+
+<p>Understanding the related code space and design space, as well as picking a good solution was hard. Back to the code, it turned out they didn&rsquo;t <em>add</em> a sidewindow, but <em>closed</em> the previous window (they call it editor but I will keep using window here) and <em>opened</em> a new two-column one, and the parameters which the new two-column window received were 1. the file path and 2. the cursor position. In this model, the new window had no idea what the previous view position was. Several possible solutions came to my mind:</p>
+
+<ul>
+<li>If the new window has a method that can scroll based on the position of another window, then I can add a new parameter to the new one&rsquo;s constructor (by overloading) and pass the previous window into it.</li>
+<li>If the new window has a method that can scroll based on a Position object, then I can extract the previous one&rsquo;s view position, add a new parameter to the new one&rsquo;s constructor and pass the previous position into it.</li>
+<li>Leave the current constructor untouched, and call the new window&rsquo;s positioning method from the outside code.</li>
+</ul>
+
+<p>I personally prefer the former two approaches since overloading sounds like a pure plus to me, and doing something like a commander outside the function chains always look unrefined.
+To see if the maintainers would agree with me, I searched the Internet and found a <a href="https://github.com/Microsoft/vscode/pull/19535">discussion</a>. All of a sudden I got puzzled. Basically the overloading approach is discouraged and the people there briefly mentioned a suggestion to turn to another more configurable API which also opens new window. However, after digging for a while, I found that the current implementation of that API also didn&rsquo;t consider view position, and to elegantly add a configuration option to preserve view would involve changing interfaces, but interface changes have to be throughtly discussed with maintainers, requiring significant amount of time, which I lacked.</p>
+
+<p>Then I started to examine the last solution. It seemed all I need are a readable property of the previous window and a setting view method for the new window. Wait a second, I don&rsquo;t know whether you have noticed that now I&rsquo;m pretending that I knew the view position was a property of a single, concrete, obvious object - the hypothetical window object, but back then I actually struggled to discover <em>how the concept was concretely represented in the code base</em>, especially when there were tons of confusing names. There existed a workspace, an editor, a TextEditor, a TextDocument, a window, an env, and such, and each of them have a legitimate reason to store the view information. My first try went fruitless - I thought the property name might contain <em>line</em> or <em>scroll</em>, so I searched those words across the code base, and got to <code>scrollPosition</code> and <code>revealLine</code> which I later figured out were actually private. Finally, I went mad and I started to throughly read the lengthy code of each of those objects, and found the mysterious <code>revealRange</code>, the publicly usable view position.</p>
+
+<p>My final pull request only has 10 lines of code change, but as you can see, the involved effort was not trivial. This pull request later got merged into the master branch.</p>
+
+<p>This article might only scratch the surface of the difficulties in open source contribution. The most frustrating thing is that though my activity was basically debugging, current research on debugging couldn&rsquo;t help me much, if at all.</p>
+
+    <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=3>
+
+<section>
+<ul >
+    
+        <li>
+        <font size="5" color="green"><b>Prev:</b></font>
+        <a href="https://hirico.moe/post/sbv/"
+                class="button big previous">Scope, Belief and Value</a></li>
+    
+
+    
+       
+        <li>
+        <font size="5" color="green"><b>Next:</b></font>
+        <a href="https://hirico.moe/post/understanding/"
+                class="button big next">Understand Understanding</a></li>
+    
+</ul>
+</section>
+
+               
+
+    
+    
+    <div id="disqus_thread"></div>
+<script>
 
 
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+
+s.src = '//wwwlearnbetterclub.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</article>
+
+</main>
 
 <footer id="footer">
 	<section id="footer-message">&copy;  <b>Zhao Gang.</b> All rights reserved. Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>. <a href="https://github.com/kathyqian/crisp-ghost-theme" target="_blank">Crisp</a> theme by <a href="http://kathyqian.com" target="_blank">Kathy Qian</a>.</section>

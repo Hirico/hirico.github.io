@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Omnidox</title>
+    <link>https://hirico.moe/tags/github/</link>
+    <description>Recent content in Github on Omnidox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Sep 2018 12:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://hirico.moe/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why open source contribution is hard</title>
+      <link>https://hirico.moe/post/whyopensourceishard/</link>
+      <pubDate>Thu, 06 Sep 2018 12:00:00 +0800</pubDate>
+      
+      <guid>https://hirico.moe/post/whyopensourceishard/</guid>
+      <description>This article is based on my reflection on one of my pull requests.
+My pull request is to resolve an usability issue of Visual Studio Code. Basically, if you opened a file in vscode and clicked &amp;lsquo;view its changes from version control system&amp;rsquo;, a sidewindow showing its last version would appear so you could compare the two versions. The problem was that your previous view position of the file was not preserved, and the vscode would scroll your screen to the cursor position of the file, which surprised the user.</description>
+    </item>
+    
+  </channel>
+</rss>

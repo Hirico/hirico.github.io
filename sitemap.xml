@@ -3,17 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hirico.moe/posts/understanding/</loc>
+    <loc>https://hirico.moe/post/understanding/</loc>
     <lastmod>2018-10-06T22:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hirico.moe/posts/unmatchedspeed/</loc>
+    <loc>https://hirico.moe/post/whyopensourceishard/</loc>
+    <lastmod>2018-09-06T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/post/sbv/</loc>
+    <lastmod>2018-08-18T20:15:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/post/rinterest/</loc>
+    <lastmod>2018-07-22T11:07:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/post/sosurvey/</loc>
+    <lastmod>2018-06-01T14:50:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/post/thinkinglanguage/</loc>
+    <lastmod>2018-03-04T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/post/unmatchedspeed/</loc>
     <lastmod>2018-02-09T22:00:00+08:00</lastmod>
   </url>
   
   <url>
+    <loc>https://hirico.moe/post/</loc>
+    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hirico.moe/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/tags/github/</loc>
+    <lastmod>2018-09-06T12:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/tags/misc/</loc>
+    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -24,13 +66,24 @@
   </url>
   
   <url>
-    <loc>https://hirico.moe/posts/</loc>
-    <lastmod>2018-10-06T22:00:00+08:00</lastmod>
+    <loc>https://hirico.moe/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/tags/software-engineering/</loc>
+    <lastmod>2018-09-06T12:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/tags/stack-overflow/</loc>
+    <lastmod>2018-06-01T14:50:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hirico.moe/tags/</loc>
+    <lastmod>2018-09-06T12:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   

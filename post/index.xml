@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Omnidox</title>
-    <link>https://hirico.moe/</link>
+    <link>https://hirico.moe/post/</link>
     <description>Recent content on Omnidox</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Oct 2018 22:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://hirico.moe/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hirico.moe/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -83,15 +83,6 @@ But using language has its own benefit. Language is paradigm, which helps us con
       <description>When I write code, it happens now and then that I forget some syntax or API, and typically I will ask google (type the question in the chrome address bar) instead of checking documentation.
 When I use my laptop with a mouse connected, I often turn to touchpad to accomplish small tasks. It’s known that some veteran programmers don’t use either, keeping their hands on the keyboard.
 Why would I make these decisions?</description>
-    </item>
-    
-    <item>
-      <title>Search Results</title>
-      <link>https://hirico.moe/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hirico.moe/search/</guid>
-      <description>(function() {var cx = &#39;009059558632698478175:komsd19zxh0&#39;;var gcse = document.createElement(&#39;script&#39;);gcse.type = &#39;text/javascript&#39;;gcse.async = true;gcse.src = &#39;https://cse.google.com/cse.js?cx=&#39; + cx;var s = document.getElementsByTagName(&#39;script&#39;)[0];s.parentNode.insertBefore(gcse, s);})(); </description>
     </item>
     
   </channel>

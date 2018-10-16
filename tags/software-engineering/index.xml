@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on Omnidox</title>
+    <link>https://hirico.moe/tags/software-engineering/</link>
+    <description>Recent content in Software Engineering on Omnidox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Sep 2018 12:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://hirico.moe/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why open source contribution is hard</title>
+      <link>https://hirico.moe/post/whyopensourceishard/</link>
+      <pubDate>Thu, 06 Sep 2018 12:00:00 +0800</pubDate>
+      
+      <guid>https://hirico.moe/post/whyopensourceishard/</guid>
+      <description>This article is based on my reflection on one of my pull requests.
+My pull request is to resolve an usability issue of Visual Studio Code. Basically, if you opened a file in vscode and clicked &amp;lsquo;view its changes from version control system&amp;rsquo;, a sidewindow showing its last version would appear so you could compare the two versions. The problem was that your previous view position of the file was not preserved, and the vscode would scroll your screen to the cursor position of the file, which surprised the user.</description>
+    </item>
+    
+    <item>
+      <title>Research Dreams</title>
+      <link>https://hirico.moe/post/rinterest/</link>
+      <pubDate>Sun, 22 Jul 2018 11:07:00 +0800</pubDate>
+      
+      <guid>https://hirico.moe/post/rinterest/</guid>
+      <description>I sometimes find some of my research interests too broad and futuristic, so I call them my research dreams.
+While the fundamental ideas about programming haven&amp;rsquo;t changed much, in order to create a modern application, the learning barrier accumulated from small techniques is dreadful. Just look at the web: in 2017, you need to learn 9 different techniques to write a modern web application, even if you already own a related degree.</description>
+    </item>
+    
+    <item>
+      <title>Why students find Stack Overflow useful, and when they don&#39;t</title>
+      <link>https://hirico.moe/post/sosurvey/</link>
+      <pubDate>Fri, 01 Jun 2018 14:50:00 +0800</pubDate>
+      
+      <guid>https://hirico.moe/post/sosurvey/</guid>
+      <description>In one of my junior optional courses, I conducted a simple survey in the form of homework to ask my classmates&amp;rsquo; experience about Stack Overflow. They are all my peers at the Software Institute, who have extensive experience of developing large and new software projects (therefore use Stack Overflow a lot) compared with more traditional CS students.
+There were two questions in the survey:
+ Under what circumstances do you want to use Stack Overflow?</description>
+    </item>
+    
+  </channel>
+</rss>
