@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hirico.moe/post/oneyearofresearch/</loc>
+    <lastmod>2018-10-18T17:05:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/cv/</loc>
+    <lastmod>2018-10-18T15:13:33+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hirico.moe/post/whyopensourceishard/</loc>
     <lastmod>2018-09-06T12:00:00+08:00</lastmod>
   </url>
@@ -34,7 +44,7 @@
   
   <url>
     <loc>https://hirico.moe/post/</loc>
-    <lastmod>2018-09-06T12:00:00+08:00</lastmod>
+    <lastmod>2018-10-18T17:05:53+08:00</lastmod>
   </url>
   
   <url>
@@ -44,7 +54,7 @@
   
   <url>
     <loc>https://hirico.moe/</loc>
-    <lastmod>2018-09-06T12:00:00+08:00</lastmod>
+    <lastmod>2018-10-18T17:05:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,6 +67,12 @@
   <url>
     <loc>https://hirico.moe/tags/misc/</loc>
     <lastmod>2018-08-18T20:15:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hirico.moe/tags/research/</loc>
+    <lastmod>2018-10-18T17:05:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   

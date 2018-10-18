@@ -6,10 +6,20 @@
     <description>Recent content on Eclectic Neurons</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Sep 2018 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Oct 2018 17:05:53 +0800</lastBuildDate>
     
 	<atom:link href="https://hirico.moe/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>One Year of My Research</title>
+      <link>https://hirico.moe/post/oneyearofresearch/</link>
+      <pubDate>Thu, 18 Oct 2018 17:05:53 +0800</pubDate>
+      
+      <guid>https://hirico.moe/post/oneyearofresearch/</guid>
+      <description>At the end of my sophomore year, after one year of reading CV papers and feeling the huge pain to transfer latest CV work into real world product, I figured our fundamental research was far behind to allow us to pursue fancy product dreams. I vowed to advance research.
+Having read The Ph.D. Grind, I knew how important it is to have an advisor with experience in reviewing top-tier conference papers.</description>
+    </item>
     
     <item>
       <title>Why open source contribution is hard</title>

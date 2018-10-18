@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Eclectic Neurons</title>
+    <link>https://hirico.moe/tags/research/</link>
+    <description>Recent content in Research on Eclectic Neurons</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Oct 2018 17:05:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://hirico.moe/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>One Year of My Research</title>
+      <link>https://hirico.moe/post/oneyearofresearch/</link>
+      <pubDate>Thu, 18 Oct 2018 17:05:53 +0800</pubDate>
+      
+      <guid>https://hirico.moe/post/oneyearofresearch/</guid>
+      <description>At the end of my sophomore year, after one year of reading CV papers and feeling the huge pain to transfer latest CV work into real world product, I figured our fundamental research was far behind to allow us to pursue fancy product dreams. I vowed to advance research.
+Having read The Ph.D. Grind, I knew how important it is to have an advisor with experience in reviewing top-tier conference papers.</description>
+    </item>
+    
+    <item>
+      <title>Research Dreams</title>
+      <link>https://hirico.moe/post/rinterest/</link>
+      <pubDate>Sun, 22 Jul 2018 11:07:00 +0800</pubDate>
+      
+      <guid>https://hirico.moe/post/rinterest/</guid>
+      <description>I sometimes find some of my research interests too broad and futuristic, so I call them my research dreams.
+While the fundamental ideas about programming haven&amp;rsquo;t changed much, in order to create a modern application, the learning barrier accumulated from small techniques is dreadful. Just look at the web: in 2017, you need to learn 9 different techniques to write a modern web application, even if you already own a related degree.</description>
+    </item>
+    
+  </channel>
+</rss>
